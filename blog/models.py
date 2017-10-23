@@ -17,7 +17,7 @@ class Post(models.Model):
     text = models.TextField(default = 'Text')
     created_date = models.DateTimeField(default = timezone.now)
     published_date = models.DateTimeField(blank = True, null = True)
-    question = models.CharField(max_length=14, choices=OR_CHOICES,default=KEK)
+    question = models.CharField(max_length=15, choices=OR_CHOICES,default=LOL)
 
     def publish(self):
         self.published_date = timezone.now()
